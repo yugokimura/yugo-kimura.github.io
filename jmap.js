@@ -812,7 +812,10 @@
             var prefDiv = $('<div>')
                 .data('data', pref)
                 .addClass(params.prefectureClass)
-                .attr('jmap-uniq', pref.code);
+                .attr('jmap-uniq', pref.code)
+                .css({
+                    'word-break': 'break-all'
+                });
 
             // Prefecture Inner
             if (params.showPrefectureName && !option.name) {
